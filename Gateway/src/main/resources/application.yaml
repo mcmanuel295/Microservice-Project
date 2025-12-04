@@ -7,6 +7,10 @@ spring:
 # route for services
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id : true
       routes:
         - id: school-service
           uri: lb://SCHOOL-SERVICE
@@ -17,6 +21,7 @@ spring:
           uri: lb://STUDENT-SERVICE
           predicates:
             - Path: /students/**
+
 
 
 eureka:
