@@ -1,48 +1,5 @@
 spring:
   application:
-    name: Gateway
+    name: gateway
   config:
     import: optional:configserver:http://localhost:8888
-
-# route for services
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id : true
-      routes:
-        - id: school-service
-          uri: lb://SCHOOL-SERVICE
-          predicates:
-            - Path: /schools/**
-
-        - id: student-service
-          uri: lb://STUDENT-SERVICE
-          predicates:
-            - Path: /students/**
-
-
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
-server:
-  port: 8080
-
-logging:
-  level:
-    root: INFO
-    org:
-      springframework:
-        cloud:
-          gateway: TRACE
-          route.RouteDefinitionLocator: INFO
-
-
-
-
