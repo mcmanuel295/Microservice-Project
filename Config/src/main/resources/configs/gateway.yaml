@@ -1,0 +1,39 @@
+spring:
+# route for services
+  cloud:
+    gateway:
+      routes:
+        - id: school-service
+          uri: lb://school-service
+          predicates:
+            - Path= /schools/**
+
+        - id: student-service
+          uri: lb://student-service
+          predicates:
+            - Path= /students/**
+
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        cloud:
+          gateway: TRACE
+          route.RouteDefinitionLocator: INFO
+
+
+
+
