@@ -39,7 +39,7 @@ public class SchoolController {
     }
 
     @GetMapping("/{schoolId}/with-students")
-    public ResponseEntity<FullResponse> findAllStudents(@PathVariable int schoolId){
+    public ResponseEntity<FullResponse> findAllStudents(@PathVariable Integer schoolId){
         try{
             return new ResponseEntity<>( service.findSchoolWithStudent(schoolId),HttpStatus.OK);
         }

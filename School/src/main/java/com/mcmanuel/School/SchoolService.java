@@ -14,10 +14,7 @@ import java.util.List;
 public class SchoolService {
     private final SchoolRepository schoolRepo;
     private final StudentClient client;
-    private final WebClient webClient;
 
-    @Value("${application.config.students-url}")
-    private String host ;
 
     public School saveSschool(School school)throws EntityTypeException {
         return schoolRepo.save(school);
@@ -32,15 +29,6 @@ public class SchoolService {
                 .orElseThrow(EntityNotFoundException::new);
 
         List<Student> stud =client.findStudentsBySchool(schoolId);
-
-//        List<Student> stud =webClient
-//                .get()
-//                .uri("{application.config.students-url}/{schoolId}/with-students","${application.config.students-url}",schoolId)
-//                .uri("http://localhost:8081/students/{schoolId}",schoolId)
-//                .retrieve()
-//                .bodyToFlux(Student.class)
-//                .collectList()
-//                .block();
 
 
         assert stud != null;
