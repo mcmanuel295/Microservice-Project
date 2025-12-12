@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: Discovery
+    name: discovery
   config:
     import: optional:configserver:http://localhost:8888
 
