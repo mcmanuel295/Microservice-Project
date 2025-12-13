@@ -3,10 +3,11 @@ spring:
     name: config
   profiles:
     active: native
-  config:
-    server:
-      native:
-        search-locations: C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main\resources\configs
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configs/
 
 server:
   port: 8888
