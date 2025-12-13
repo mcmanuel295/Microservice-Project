@@ -1,17 +1,20 @@
 spring:
-# route for services
+  application:
+    name: gateway
+  # route for services
   cloud:
     gateway:
-      routes:
-        - id: school-service
-          uri: lb://school-service
-          predicates:
-            - Path= /schools/**
+      routes[0]:
+        id: school-service
+        uri: lb://school-service
+        predicates[0]: Path=/schools/**
 
-        - id: student-service
-          uri: lb://student-service
-          predicates:
-            - Path= /students/**
+      route[1]:
+        id: student-service
+        uri: lb://student-service
+        predicates[0]: Path=/students/**
+  config:
+    import: optional:configserver:http://localhost:8888
 
 
 
@@ -33,7 +36,3 @@ logging:
         cloud:
           gateway: TRACE
           route.RouteDefinitionLocator: INFO
-
-
-
-
