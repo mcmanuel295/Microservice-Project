@@ -1,10 +1,12 @@
 spring:
   application:
     name: config
+
   profiles:
     active: native
   cloud:
     config:
+      enabled: false
       server:
         native:
           search-locations: classpath:/configs/
