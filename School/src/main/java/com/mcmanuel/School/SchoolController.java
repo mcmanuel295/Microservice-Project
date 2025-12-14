@@ -32,14 +32,30 @@ public class SchoolController {
         }
     }
 
+    @GetMapping("/{schoolId}")
+    public ResponseEntity<School> getSchoolById(@PathVariable Integer schoolId){
+        School savedStudent;
+        try{
+            savedStudent =service.getSchoolById(schoolId);
+            return new ResponseEntity<>(savedStudent,HttpStatus.CREATED);
+        }
+        catch (EntityTypeException ex){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        catch (Exception ex){
+            log.error(ex.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
     @GetMapping("/")
-    public ResponseEntity<List<Student>> findAllStudents(){
-        return new ResponseEntity<>( service.findAllStudents(),HttpStatus.OK);
+    public ResponseEntity<List<School>> findAllStudents(){
+        return new ResponseEntity<>( service.getAllSchool(),HttpStatus.OK);
     }
 
     @GetMapping("/{schoolId}")
-    public ResponseEntity<List<Student>> findStudentsBySchool(@PathVariable(name = "schoolId") int schoolId){
+    public ResponseEntity<FullResponse> findSchoolWithStudents(@PathVariable(name = "schoolId") int schoolId){
         System.out.println("in the controller method");
-        return new ResponseEntity<>( service.findStudentsBySchool(schoolId),HttpStatus.OK);
+        return new ResponseEntity<>( service.getSchoolWithStudent(schoolId),HttpStatus.OK);
     }
 }

@@ -11,6 +11,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SchoolService {
     private final SchoolRepository schoolRepo;
+    private final WebClient client;
 
     public School saveSchool(School student)throws EntityTypeException {
         return schoolRepo.save(student);
@@ -25,8 +26,16 @@ public class SchoolService {
         return schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
     }
 
-    public School getSchoolWithStudent(int schoolId) {
+    public FullResponse getSchoolWithStudent(int schoolId) {
         System.out.println("in the service method");
-        return schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
+        School school =schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
+
+        List<Student> students = client.findAllStudentsBySchoolId(school.getSchoolId());
+
+        return FullResponse.builder()
+                .schoolName(school.getSchoolName())
+                .totalStudent(students.size())
+                .studentList(students)
+                .build();
     }
 }
