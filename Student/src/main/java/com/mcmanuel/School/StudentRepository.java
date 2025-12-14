@@ -1,4 +1,4 @@
-package com.mcmanuel.Student;
+package com.mcmanuel.School;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

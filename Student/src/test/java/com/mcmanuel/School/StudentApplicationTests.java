@@ -1,4 +1,4 @@
-package com.mcmanuel.Student;
+package com.mcmanuel.School;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

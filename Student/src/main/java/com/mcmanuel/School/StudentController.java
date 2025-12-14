@@ -1,4 +1,4 @@
-package com.mcmanuel.Student;
+package com.mcmanuel.School;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.mcmanuel.Student;
+package com.mcmanuel.School;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
