@@ -1,15 +1,14 @@
 spring:
   application:
     name: school-service
+    config:
+      students-url: http://student-service/students
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3307/msnetwork
     password: 123
 
-  application:
-    config:
-      students-url: STUDENT-SERVICE/students
 
   jpa:
     hibernate.ddl-auto:  update
