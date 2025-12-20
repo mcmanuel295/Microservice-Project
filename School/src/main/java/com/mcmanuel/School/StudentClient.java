@@ -4,8 +4,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 
 import java.util.List;
 
-@FeignClient(name = "student-service", url = "${spring.application.config.import}")
-public interface WebClient {
+@FeignClient(name = "student-service")
+public interface StudentClient {
 
      List<Student> findAllStudentsBySchoolId(Integer schoolId);
 }

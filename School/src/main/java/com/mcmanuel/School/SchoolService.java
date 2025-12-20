@@ -11,7 +11,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SchoolService {
     private final SchoolRepository schoolRepo;
-    private final WebClient client;
+    private final StudentClient client;
 
     public School saveSchool(School student)throws EntityTypeException {
         return schoolRepo.save(student);
