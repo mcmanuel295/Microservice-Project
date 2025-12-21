@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c53cbac5-fd31-484c-abe8-9cb310691744" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/School/src/main/java/com/mcmanuel/School/FullResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/src/main/java/com/mcmanuel/Config/ConfigApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Config/src/test/java/com/mcmanuel/Config/ConfigApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/src/main/java/com/mcmanuel/Discovery/DiscoveryApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Discovery/src/test/java/com/mcmanuel/Discovery/DiscoveryApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/src/main/java/com/mcmanuel/Gateway/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Gateway/src/test/java/com/mcmanuel/Gateway/GatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/FullResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/School.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/SchoolApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/SchoolController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/SchoolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/SchoolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/StudentClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/java/com/mcmanuel/School/WebClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/School/src/test/java/com/mcmanuel/School/SchoolApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/main/java/com/mcmanuel/Student/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/main/java/com/mcmanuel/Student/StudentApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/main/java/com/mcmanuel/Student/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/main/java/com/mcmanuel/Student/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/main/java/com/mcmanuel/Student/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/Student/src/test/java/com/mcmanuel/Student/StudentApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/src/main/java/org/mcmanuel/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Student/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_COMMON_BRANCH" value="master" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="35vgOcrZBK9nuSH4FhC2YukVAo3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConfigApplication.executor": "Debug",
+    "Application.DiscoveryApplication.executor": "Debug",
+    "Application.GatewayApplication.executor": "Debug",
+    "Application.SchoolApplication.executor": "Debug",
+    "Application.StudentApplication.executor": "Debug",
+    "Maven.Microservice-Project [clean,install].executor": "Run",
+    "Maven.Microservice-Project [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/Spring Projects/Microservice-Project/hhh",
+    "onboarding.tips.debug.path": "C:/Users/USER/Spring Projects/Microservice-Project/src/main/java/org/mcmanuel/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33128834",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propCompiler"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mcmanuel.School" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\School\src\main\resources" />
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\School\src\main" />
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Gateway\src\main\resources" />
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main\resources\configs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\hhh" />
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project" />
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main\resources\configs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mcmanuel.School" />
+      <recent name="com.mcmanuel.Student" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="CompoundRunConfigurationType" />
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ConfigApplication">
+    <configuration name="ConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="ms-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.mcmanuel.Config.ConfigApplication" />
+      <module name="Config" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mcmanuel.Config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mcmanuel.Discovery.DiscoveryApplication" />
+      <module name="Discovery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mcmanuel.Discovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mcmanuel.Gateway.GatewayApplication" />
+      <module name="Gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mcmanuel.Gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.mcmanuel.School.SchoolApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mcmanuel.School.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mcmanuel.School.StudentApplication" />
+      <module name="Student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mcmanuel.School.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <shortenClasspath name="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConfigApplication" />
+      <item itemvalue="Application.DiscoveryApplication" />
+      <item itemvalue="Application.GatewayApplication" />
+      <item itemvalue="Application.SchoolApplication" />
+      <item itemvalue="Application.StudentApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DiscoveryApplication" />
+        <item itemvalue="Application.ConfigApplication" />
+        <item itemvalue="Application.StudentApplication" />
+        <item itemvalue="Application.SchoolApplication" />
+        <item itemvalue="Application.GatewayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c53cbac5-fd31-484c-abe8-9cb310691744" name="Changes" comment="" />
+      <created>1763995934139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763995934139</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/mcmanuel/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
