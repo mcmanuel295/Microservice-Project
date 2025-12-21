@@ -14,13 +14,14 @@
     <groupId>com.mcmanuel</groupId>
     <artifactId>Microservice-Project</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging> <modules>
-    <module>Student</module>
-    <module>Discovery</module>
-    <module>Gateway</module>
-    <module>Config</module>
-    <module>School</module>
-</modules>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Student</module>
+        <module>Discovery</module>
+        <module>Gateway</module>
+        <module>Config</module>
+        <module>School</module>
+    </modules>
 
     <properties>
         <java.version>22</java.version>
