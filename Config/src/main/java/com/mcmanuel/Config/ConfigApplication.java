@@ -8,11 +8,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
 @EnableConfigServer
-@EnableAutoConfiguration(exclude = {
-        ConfigClientAutoConfiguration.class,
-        // Also exclude these if needed:
-       // org.springframework.cloud.config.client.ConfigServerConfigDataLocationResolver.class
-})
+@EnableAutoConfiguration
 public class ConfigApplication {
 
 	public static void main(String[] args) {
