@@ -53,7 +53,7 @@ public class SchoolController {
         return new ResponseEntity<>( service.getAllSchool(),HttpStatus.OK);
     }
 
-    @GetMapping("/{schoolId}")
+    @GetMapping("/{schoolId}/with-students")
     public ResponseEntity<FullResponse> findSchoolWithStudents(@PathVariable(name = "schoolId") int schoolId){
         System.out.println("in the controller method");
         return new ResponseEntity<>( service.getSchoolWithStudent(schoolId),HttpStatus.OK);
