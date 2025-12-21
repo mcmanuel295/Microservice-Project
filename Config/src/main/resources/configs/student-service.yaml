@@ -1,6 +1,6 @@
 spring:
   application:
-    name:school-service
+    name: school-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
