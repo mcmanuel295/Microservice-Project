@@ -1,22 +1,19 @@
 spring:
   application:
     name: gateway-service
-  # route for services
-  cloud:
-    gateway:
-      routes[0]:
-        id: school-service
-        uri: lb://school-service
-        predicates[0]: Path=/schools/**
-
-      route[1]:
-        id: student-service
-        uri: lb://student-service
-        predicates[0]: Path=/students/**
   config:
     import: optional:configserver:http://localhost:8888
-
-
+  cloud:
+    gateway:
+      routes:
+        - id: school-service
+          uri: lb://SCHOOL-SERVICE  # Use uppercase service name
+          predicates:
+            - Path=/schools/**
+        - id: student-service
+          uri: lb://STUDENT-SERVICE  # Use uppercase service name
+          predicates:
+            - Path=/students/**
 
 eureka:
   instance:
@@ -24,6 +21,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
 
 server:
   port: 8080
@@ -31,8 +30,5 @@ server:
 logging:
   level:
     root: INFO
-    org:
-      springframework:
-        cloud:
-          gateway: TRACE
-          route.RouteDefinitionLocator: INFO
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: INFO
