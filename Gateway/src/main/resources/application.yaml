@@ -1,21 +1,8 @@
 spring:
   application:
     name: gateway-service
-  cloud:
-    config:
-      config:
-        import: "optional:configserver:http://localhost:8888"
-
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://localhost:8888  # This is the modern way
 
 server:
   port: 8080
-
-
-logging:
-  level:
-    root: INFO
-    org.springframework.cloud.gateway: TRACE
-    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: DEBUG
-    org.springframework.cloud.config.client: DEBUG
