@@ -10,6 +10,10 @@ spring:
           uri: lb://STUDENT-SERVICE  # Use uppercase service name
           predicates:
             - Path=/students/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
 
 eureka:
   instance:
@@ -27,4 +31,13 @@ logging:
   level:
     root: INFO
     org.springframework.cloud.gateway: TRACE
-    org.springframework.cloud.gateway.route.RouteDefinitionLocator: DEBUG
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: TRACE
+    org.springframework.cloud.gateway.handler.predicate: TRACE
+    org.springframework.cloud.gateway.handler.FilteringWebHandler: TRACE
+
+
+reactor:
+  netty:
+    http:
+      server:
+        accessLogEnabled: true.
