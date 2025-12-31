@@ -1,8 +1,4 @@
 spring:
-  application:
-    name: gateway-service
-  config:
-    import: optional:configserver:http://localhost:8888
   cloud:
     gateway:
       routes:
@@ -31,4 +27,4 @@ logging:
   level:
     root: INFO
     org.springframework.cloud.gateway: TRACE
-    org.springframework.cloud.gateway.route.RouteDefinitionLocator: INFO
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: DEBUG
