@@ -7,8 +7,8 @@
     <list default="true" id="c53cbac5-fd31-484c-abe8-9cb310691744" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/School/src/main/java/com/mcmanuel/School/FullResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/src/main/resources/configs/gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/src/main/resources/configs/gateway.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/src/main/java/com/mcmanuel/Gateway/RouteDiagnosticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/mcmanuel/Gateway/RouteDiagnosticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Discovery/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -68,6 +68,7 @@
       <change beforePath="$PROJECT_DIR$/School/Student/src/test/java/com/mcmanuel/Student/StudentApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/src/main/java/org/mcmanuel/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Student/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +114,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Spring Projects/Microservice-Project/hhh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Spring Projects/Microservice-Project&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/USER/Spring Projects/Microservice-Project/src/main/java/org/mcmanuel/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -277,10 +278,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.DiscoveryApplication" />
+        <item itemvalue="Application.ConfigApplication" />
         <item itemvalue="Application.StudentApplication" />
         <item itemvalue="Application.SchoolApplication" />
-        <item itemvalue="Application.ConfigApplication" />
-        <item itemvalue="Application.DiscoveryApplication" />
       </list>
     </recent_temporary>
   </component>
