@@ -1,8 +1,27 @@
 spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: school-service
+#          uri: lb://SCHOOL-SERVICE
+#          predicates:
+#            - Path=/schools/**
+#        - id: student-service
+#          uri: lb://STUDENT-SERVICE
+#          predicates:
+#            - Path=/students/**
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
   application:
-    name: gateway-service
+    name: gateway
   config:
-    import: optional:configserver:http://localhost:8888  # This is the modern way
+    import: optional:configserver:http://localhost:8888
+
+
+#          uri: lb://STUDENT-SERVICE
+#          uri: lb://SCHOOL-SERVICE
 
 server:
   port: 8080
@@ -25,10 +44,10 @@ info:
     name: gateway
     version: 2
 
-
-logging:
-  level:
-    root: INFO
-    org.springframework.cloud.gateway: TRACE
-    org.springframework.cloud.gateway.route.RouteDefinitionLocator: DEBUG
-    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: DEBUG
+#
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.cloud.gateway: TRACE
+#    org.springframework.cloud.gateway.route.RouteDefinitionLocator: TRACE
+#    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: TRACE
