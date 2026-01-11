@@ -13,8 +13,8 @@ public class ConfigApplication {
 
 	public static void main(String[] args) {
 
-        System.setProperty("spring.cloud.bootstrap.enabled", "false");
-        System.setProperty("spring.config.use-legacy-processing", "true");
+//        System.setProperty("spring.cloud.bootstrap.enabled", "false");
+//        System.setProperty("spring.config.use-legacy-processing", "true");
 
         SpringApplication.run(ConfigApplication.class, args);
 	}
