@@ -22,3 +22,48 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      student:
+        register-health-indicator: true    #enables one to see the different states
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 50
+
+        # HALF OPEN STATE
+        permitted-number-of-calls-in-half-open-state: 3  #times of checking in the half-open state
+
+        # CLOSED STATE
+        # sliding window to determine when to change from close to open
+        sliding-window-size: 5
+        sliding-window-type: COUNT_BASED   #won't change state immediately but count based
+
+        # OPEN STATE
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 5s  #duration for the open state before changing to half-open
+
+
+#  timelimiter:
+#    instances:
+#      student:
+#
+#
+#  retry:
+#    instances:
+#      student:
+
+
+
+
