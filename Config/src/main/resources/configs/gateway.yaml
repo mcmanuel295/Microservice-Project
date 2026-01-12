@@ -6,10 +6,18 @@ spring:
           uri: lb://SCHOOL-SERVICE
           predicates:
             - Path=/schools/**
+          filters:
+            - PrefixPath=/students
+            - AddResponseHeader=X-Powered-By,gateway service
+
         - id: student-service
           uri: lb://STUDENT-SERVICE
           predicates:
             - Path=/students/**
+
+          filters:
+            - PrefixPath=/schools
+            - AddResponseHeader=X-Powered-By,gateway service
 
       discovery:
         locator:
@@ -44,8 +52,11 @@ server:
 
 logging:
   level:
-    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.gateway: TRACE
     org.springframework.cloud.gateway.route: TRACE
     org.springframework.cloud.gateway.handler: TRACE
     org.springframework.cloud.loadbalancer: DEBUG
     reactor.netty: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
