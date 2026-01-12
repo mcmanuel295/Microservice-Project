@@ -7,8 +7,6 @@
     <list default="true" id="c53cbac5-fd31-484c-abe8-9cb310691744" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/School/src/main/java/com/mcmanuel/School/FullResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discovery/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -68,8 +66,6 @@
       <change beforePath="$PROJECT_DIR$/School/Student/src/test/java/com/mcmanuel/Student/StudentApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/src/main/java/org/mcmanuel/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Student/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +112,7 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Spring Projects/Microservice-Project&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/USER/Spring Projects/Microservice-Project/src/main/java/org/mcmanuel/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.33128834&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
@@ -134,9 +130,10 @@
       <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main\resources\configs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main\resources\configs" />
+      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main" />
       <recent name="C:\Users\USER\Spring Projects\Microservice-Project\hhh" />
       <recent name="C:\Users\USER\Spring Projects\Microservice-Project" />
-      <recent name="C:\Users\USER\Spring Projects\Microservice-Project\Config\src\main\resources\configs" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mcmanuel.School" />
@@ -145,10 +142,10 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean" />
       <command value="mvn clean install -u" />
       <command value="mvn clean install -U" />
       <command value="mvn clean install" />
+      <command value="mvn clean" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -214,25 +211,14 @@
       </method>
     </configuration>
     <configuration name="SchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.mcmanuel.School.SchoolApplication" />
-      <module name="school-service" />
+      <module name="School" />
+      <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mcmanuel.School.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -271,17 +257,17 @@
     <list>
       <item itemvalue="Application.ConfigApplication" />
       <item itemvalue="Application.DiscoveryApplication" />
+      <item itemvalue="Application.StudentApplication" />
       <item itemvalue="Application.SchoolApplication" />
       <item itemvalue="Application.GatewayApplication" />
-      <item itemvalue="Application.StudentApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.SchoolApplication" />
+        <item itemvalue="Application.StudentApplication" />
         <item itemvalue="Application.DiscoveryApplication" />
         <item itemvalue="Application.ConfigApplication" />
-        <item itemvalue="Application.StudentApplication" />
-        <item itemvalue="Application.SchoolApplication" />
       </list>
     </recent_temporary>
   </component>
