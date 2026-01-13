@@ -1,6 +1,7 @@
 package com.mcmanuel.School;
 
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.query.sqm.EntityTypeException;
 import org.springframework.http.HttpStatus;
