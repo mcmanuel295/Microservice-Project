@@ -27,7 +27,7 @@ public class SchoolService {
         return schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
     }
 
-    @CircuitBreaker(name = "student",fallbackMethod = "fallBackMethod")
+//    @CircuitBreaker(name = "student",fallbackMethod = "fallBackMethod")
     public FullResponse getSchoolWithStudent(int schoolId) {
         System.out.println("in the service method");
         School school =schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
@@ -41,8 +41,8 @@ public class SchoolService {
                 .build();
     }
 
-    private String fallBackMethod(int schoolId,RuntimeException ex){
-        return "oops, Something went wrong, please try again after some time";
-    }
+//    private String fallBackMethod(int schoolId,RuntimeException ex){
+//        return "oops, Something went wrong, please try again after some time";
+//    }
 
 }
