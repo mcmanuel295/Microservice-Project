@@ -82,7 +82,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/School" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProblemsViewState">
@@ -263,10 +263,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfigApplication" />
         <item itemvalue="Application.SchoolApplication" />
         <item itemvalue="Application.StudentApplication" />
         <item itemvalue="Application.DiscoveryApplication" />
-        <item itemvalue="Application.ConfigApplication" />
         <item itemvalue="Application.GatewayApplication" />
       </list>
     </recent_temporary>
