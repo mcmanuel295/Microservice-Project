@@ -1,5 +1,6 @@
 package com.mcmanuel.School;
 
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.query.sqm.EntityTypeException;
@@ -39,7 +40,7 @@ public class SchoolController {
             savedStudent =service.getSchoolById(schoolId);
             return new ResponseEntity<>(savedStudent,HttpStatus.CREATED);
         }
-        catch (EntityTypeException ex){
+        catch (EntityNotFoundException ex){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         catch (Exception ex){
@@ -53,9 +54,20 @@ public class SchoolController {
         return new ResponseEntity<>( service.getAllSchool(),HttpStatus.OK);
     }
 
+
     @GetMapping("/{schoolId}/with-students")
     public ResponseEntity<FullResponse> findSchoolWithStudents(@PathVariable int schoolId){
-        System.out.println("in the with-students controller");
-        return new ResponseEntity<>( service.getSchoolWithStudent(schoolId),HttpStatus.OK);
+        try{
+            System.out.println("in the with-students controller");
+            return new ResponseEntity<>( service.getSchoolWithStudent(schoolId),HttpStatus.OK);
+        }
+        catch (EntityNotFoundException ex){
+            return new ResponseEntity<>(new FullResponse (
+                null,0,null),HttpStatus.BAD_REQUEST);
+        }
+        catch (Exception ex){
+            log.error(ex.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 }

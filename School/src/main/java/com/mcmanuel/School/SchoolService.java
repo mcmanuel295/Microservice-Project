@@ -30,7 +30,7 @@ public class SchoolService {
 //    @CircuitBreaker(name = "student",fallbackMethod = "fallBackMethod")
     public FullResponse getSchoolWithStudent(int schoolId) {
         System.out.println("in the service method");
-        School school =schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
+        School school =schoolRepo.findById(schoolId).orElseThrow(()-> new EntityNotFoundException("School not found"));
 
         List<Student> students = client.findAllStudentsBySchoolId(school.getSchoolId());
 
