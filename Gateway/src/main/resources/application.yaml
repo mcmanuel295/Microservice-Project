@@ -1,4 +1,13 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
+
+
+
+
 #  cloud:
 #    gateway:
 #      routes:
