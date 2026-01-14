@@ -10,7 +10,7 @@ spring:
 
 
 server:
-  port: 0
+  port: 8082
 
 eureka:
   instance:
