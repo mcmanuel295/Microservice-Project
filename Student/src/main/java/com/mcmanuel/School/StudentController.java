@@ -38,9 +38,9 @@ public class StudentController {
         return new ResponseEntity<>( service.findAllStudents(),HttpStatus.OK);
     }
 
+    @SneakyThrows
     @GetMapping("/{schoolId}")
     public ResponseEntity<List<Student>> findStudentsBySchool(@PathVariable(name = "schoolId") int schoolId){
-        System.out.println("in the controller method");
         return new ResponseEntity<>( service.findStudentsBySchool(schoolId),HttpStatus.OK);
     }
 }
