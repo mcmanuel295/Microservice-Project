@@ -58,12 +58,11 @@ public class SchoolController {
     @GetMapping("/{schoolId}/with-students")
     public ResponseEntity<FullResponse> findSchoolWithStudents(@PathVariable int schoolId){
         try{
-            System.out.println("in the with-students controller");
             return new ResponseEntity<>( service.getSchoolWithStudent(schoolId),HttpStatus.OK);
         }
         catch (EntityNotFoundException ex){
             return new ResponseEntity<>(new FullResponse (
-                null,0,null),HttpStatus.BAD_REQUEST);
+                "Invalid ID",0,null),HttpStatus.BAD_REQUEST);
         }
         catch (Exception ex){
             log.error(ex.getMessage());

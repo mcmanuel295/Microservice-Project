@@ -4,6 +4,7 @@ import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.query.sqm.EntityTypeException;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,7 +28,8 @@ public class SchoolService {
         return schoolRepo.findById(schoolId).orElseThrow(EntityNotFoundException::new);
     }
 
-//    @CircuitBreaker(name = "student",fallbackMethod = "fallBackMethod")
+
+    @CircuitBreaker(name = "student", fallbackMethod = "fallBackMethod")
     public FullResponse getSchoolWithStudent(int schoolId) {
         System.out.println("in the service method");
         School school =schoolRepo.findById(schoolId).orElseThrow(()-> new EntityNotFoundException("School not found"));
@@ -41,8 +43,12 @@ public class SchoolService {
                 .build();
     }
 
-//    private String fallBackMethod(int schoolId,RuntimeException ex){
-//        return "oops, Something went wrong, please try again after some time";
-//    }
+    public FullResponse fallBackMethod(int schoolId,RuntimeException ex){
+        return FullResponse.builder()
+                .schoolName("Service Unavailable")
+                .totalStudent(0)
+                .studentList(List.of())
+                .build();
+    }
 
 }

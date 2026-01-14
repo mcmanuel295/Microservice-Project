@@ -31,7 +31,10 @@ management:
 
   endpoint:
     health:
+      circuitBreakers:
+        enabled: true
       show-details: ALWAYS
+
 
 
 resilience4j:
@@ -55,11 +58,11 @@ resilience4j:
         wait-duration-in-open-state: 5s  #duration for the open state before changing to half-open
 
 
-#  timelimiter:
-#    instances:
-#      student:
-#
-#
+  timelimiter:
+    instances:
+      student:
+        timeout-duration: 3s
+
 #  retry:
 #    instances:
 #      student:
