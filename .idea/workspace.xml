@@ -7,8 +7,6 @@
     <list default="true" id="c53cbac5-fd31-484c-abe8-9cb310691744" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/School/src/main/java/com/mcmanuel/School/FullResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/src/main/resources/configs/school-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/src/main/resources/configs/school-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/src/main/resources/configs/student-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/src/main/resources/configs/student-service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -68,6 +66,8 @@
       <change beforePath="$PROJECT_DIR$/School/Student/src/test/java/com/mcmanuel/Student/StudentApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/src/main/java/org/mcmanuel/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/School" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProblemsViewState">
@@ -265,8 +265,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentApplication" />
         <item itemvalue="Application.SchoolApplication" />
+        <item itemvalue="Application.StudentApplication" />
         <item itemvalue="Application.DiscoveryApplication" />
         <item itemvalue="Application.ConfigApplication" />
         <item itemvalue="Application.GatewayApplication" />
