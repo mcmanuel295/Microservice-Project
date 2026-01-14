@@ -20,7 +20,6 @@ public class StudentService {
     }
 
     public List<Student> findStudentsBySchool(int schoolId) {
-        System.out.println("in the service method");
         return studentRepo.findAllBySchoolId(schoolId);
     }
 }

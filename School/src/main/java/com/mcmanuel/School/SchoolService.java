@@ -1,6 +1,7 @@
 package com.mcmanuel.School;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.query.sqm.EntityTypeException;
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @Service
 @RequiredArgsConstructor
@@ -30,25 +32,27 @@ public class SchoolService {
 
 
     @CircuitBreaker(name = "student", fallbackMethod = "fallBackMethod")
-    public FullResponse getSchoolWithStudent(int schoolId) {
-        System.out.println("in the service method");
+    @TimeLimiter(name = "student")
+    public CompletableFuture<FullResponse> getSchoolWithStudent(int schoolId) {
         School school =schoolRepo.findById(schoolId).orElseThrow(()-> new EntityNotFoundException("School not found"));
 
         List<Student> students = client.findAllStudentsBySchoolId(school.getSchoolId());
 
-        return FullResponse.builder()
+        return CompletableFuture.supplyAsync(()-> FullResponse.builder()
                 .schoolName(school.getSchoolName())
                 .totalStudent(students.size())
                 .studentList(students)
-                .build();
+                .build()
+        );
     }
 
-    public FullResponse fallBackMethod(int schoolId,RuntimeException ex){
-        return FullResponse.builder()
+    public CompletableFuture<FullResponse> fallBackMethod(int schoolId, RuntimeException ex){
+        return CompletableFuture.supplyAsync(()-> FullResponse.builder()
                 .schoolName("Service Unavailable")
                 .totalStudent(0)
                 .studentList(List.of())
-                .build();
+                .build()
+        );
     }
 
 }
