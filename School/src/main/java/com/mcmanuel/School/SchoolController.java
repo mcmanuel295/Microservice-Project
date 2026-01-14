@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @RestController
 @RequiredArgsConstructor
@@ -56,13 +57,13 @@ public class SchoolController {
 
 
     @GetMapping("/{schoolId}/with-students")
-    public ResponseEntity<FullResponse> findSchoolWithStudents(@PathVariable int schoolId){
+    public ResponseEntity<CompletableFuture<FullResponse>> findSchoolWithStudents(@PathVariable int schoolId){
         try{
             return new ResponseEntity<>( service.getSchoolWithStudent(schoolId),HttpStatus.OK);
         }
         catch (EntityNotFoundException ex){
-            return new ResponseEntity<>(new FullResponse (
-                "Invalid ID",0,null),HttpStatus.BAD_REQUEST);
+            log.info("Entity Exception Error");
+            return new ResponseEntity<>(CompletableFuture.completedFuture(new FullResponse(null,0,null)),HttpStatus.BAD_REQUEST);
         }
         catch (Exception ex){
             log.error(ex.getMessage());
