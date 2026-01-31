@@ -31,9 +31,9 @@ management:
 
   endpoint:
     health:
+      show-details: ALWAYS
       circuitBreakers:
         enabled: true
-      show-details: ALWAYS
 
 
 
@@ -63,9 +63,11 @@ resilience4j:
       student:
         timeout-duration: 3s
 
-#  retry:
-#    instances:
-#      student:
+  retry:
+    instances:
+      student:
+        max-attempts: 3
+        wait-duration: 5s
 
 
 

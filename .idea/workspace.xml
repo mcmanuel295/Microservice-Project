@@ -66,8 +66,6 @@
       <change beforePath="$PROJECT_DIR$/School/Student/src/test/java/com/mcmanuel/Student/StudentApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/src/main/java/org/mcmanuel/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Student/src/main/java/com/mcmanuel/School/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/School" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProblemsViewState">
