@@ -22,6 +22,7 @@
         <module>Gateway</module>
         <module>Config</module>
         <module>School</module>
+        <module>Config/untitled</module>
     </modules>
 
     <properties>

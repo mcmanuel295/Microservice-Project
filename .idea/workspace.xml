@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53cbac5-fd31-484c-abe8-9cb310691744" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Config/untitled/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/School/src/main/java/com/mcmanuel/School/FullResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/Config/.gitignore" beforeDir="false" />
@@ -66,6 +68,7 @@
       <change beforePath="$PROJECT_DIR$/School/Student/src/test/java/com/mcmanuel/Student/StudentApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/src/main/java/org/mcmanuel/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/School" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProblemsViewState">
@@ -96,29 +99,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ConfigApplication.executor": "Debug",
-    "Application.DiscoveryApplication.executor": "Debug",
-    "Application.GatewayApplication.executor": "Debug",
-    "Application.SchoolApplication.executor": "Debug",
-    "Application.StudentApplication.executor": "Debug",
-    "Maven.Microservice-Project [clean,install,-U].executor": "Run",
-    "Maven.Microservice-Project [clean,install,-u].executor": "Run",
-    "Maven.Microservice-Project [clean,install].executor": "Run",
-    "Maven.Microservice-Project [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/Spring Projects",
-    "onboarding.tips.debug.path": "C:/Users/USER/Spring Projects/DataStructure_Trees/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.33128834",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConfigApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DiscoveryApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.GatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SchoolApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.StudentApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.Microservice-Project [clean,install,-U].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Microservice-Project [clean,install,-u].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Microservice-Project [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Microservice-Project [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Spring Projects&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/USER/Spring Projects/Microservice-Project/Config/untitled/src/main/java/com/mcmanuel/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33128834&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mcmanuel.School" />
@@ -305,6 +308,11 @@
           <url>file://$PROJECT_DIR$/../DataStructure_Trees/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Config/untitled/src/main/java/com/mcmanuel/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
